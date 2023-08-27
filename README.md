@@ -1,2 +1,2 @@
-# r-programming-samples
-A collection of R scripts for reference
+# R Programming Samples
+A collection of **R** scripts for reference.  
