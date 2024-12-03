@@ -11,7 +11,7 @@ This repository contains R scripts for two data analysis assignments. The script
 
 ### Overview
 
-This assignment focuses on creating functions for basic data manipulation and statistical analysis. The functions cover:
+This [assignment](https://github.com/nabilshadman/r-data-analysis/tree/main/assignment1) focuses on creating functions for basic data manipulation and statistical analysis. The functions cover:
 
 * **Circle Calculations:** Calculating area, circumference, volume, and surface area of circles and spheres.
 * **Descriptive Statistics:** Computing summary statistics for numeric variables in a data frame.
@@ -34,7 +34,7 @@ This assignment focuses on creating functions for basic data manipulation and st
 
 ### Overview
 
-This assignment focuses on data cleaning, preprocessing, and analysis. The functions cover:
+This [assignment](https://github.com/nabilshadman/r-data-analysis/tree/main/assignment2) focuses on data cleaning, preprocessing, and analysis. The functions cover:
 
 * **Data Cleaning:** Handling missing values and outliers.
 * **Data Manipulation:** Reshaping and merging data frames.
