@@ -1,59 +1,109 @@
-# R Data Analysis Assignments
+# R Data Analysis Framework
+[![Experimental](https://img.shields.io/badge/Status-Experimental-orange.svg)](https://shields.io/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-This repository contains R scripts for two data analysis assignments. The scripts demonstrate various data manipulation, analysis, and visualization techniques using R programming language.
+A modular R framework for data analysis, data manipulation, and visualization. This library provides functions for handling data, with emphasis on reproducibility and clean code practices.
 
-## Environment Setup
+## Overview
 
-1. **R and RStudio:** Ensure you have R and RStudio installed on your system.
-2. **Install Required Packages:** If needed, install any required packages using the `install.packages()` function.
+This framework implements data analysis workflows focusing on:
+- Geometric calculations and transformations
+- Descriptive statistics and data summarization  
+- Statistical hypothesis testing
+- Data preprocessing and cleaning
+- Correlation analysis
 
-## Assignment 1: Data Analysis and Function Creation
+## Installation
 
-### Overview
+```r
+# Clone repository
+git clone https://github.com/username/r-statistical-analysis.git
 
-This [assignment](https://github.com/nabilshadman/r-data-analysis/tree/main/assignment1) focuses on creating functions for basic data manipulation and statistical analysis. The functions cover:
+# Install required R packages
+install.packages(c("stats", "utils", "base"))
+```
 
-* **Circle Calculations:** Calculating area, circumference, volume, and surface area of circles and spheres.
-* **Descriptive Statistics:** Computing summary statistics for numeric variables in a data frame.
-* **Two-Sample T-Tests:** Performing t-tests to compare means of two groups.
+## Project Structure
 
-### File Description
+```
+.
+├── assignment1/
+│   ├── assignment1.R      # Core statistical functions
+│   └── chol.txt           # Sample cholesterol dataset
+├── assignment2/
+│   ├── assignment2.R      # Data preprocessing utilities  
+│   └── Assignment2.RData  # Multi-dataset RData file
+└── README.md
+```
 
-* **assignment1.R:** Contains the R code for the functions and their usage.
-* **patient_num.RData:** Sample data file for the descriptive statistics function.
-* **chol.txt:** Sample data file for the t-test function.
+## Core Features
 
-### Usage
+### Geometric Analysis Module
+- Circle and sphere calculations (area, volume, circumference)
+- Multi-dimensional geometric transformations
+- Configurable precision and rounding
 
-1. **Clone the Repository:** Clone this repository to your local machine.
-2. **Open RStudio:** Start RStudio and open the `assignment1.R` script.
-3. **Load Data:** Load the `patient_num.RData` and `chol.txt` data files into your R environment.
-4. **Run the Script:** Execute the code in the `assignment1.R` script to define and test the functions.
+### Statistical Analysis Tools
+- Descriptive statistics generation
+- Two-sample t-test automation
+- Missing value handling
+- Outlier detection and processing
 
-## Assignment 2: Data Cleaning and Analysis
+### Data Processing Utilities
+- Data normalization
+- Correlation analysis for metrics
+- Categorical data imputation
+- Flexible data frame operations
 
-### Overview
+## Usage Examples
 
-This [assignment](https://github.com/nabilshadman/r-data-analysis/tree/main/assignment2) focuses on data cleaning, preprocessing, and analysis. The functions cover:
+### Basic Circle Calculations
+```r
+# Calculate circle area
+calCircle('ac', 4)
 
-* **Data Cleaning:** Handling missing values and outliers.
-* **Data Manipulation:** Reshaping and merging data frames.
-* **Statistical Analysis:** Performing correlation analysis and descriptive statistics.
+# Multiple calculations
+calCircle2(c('AC', 'VS'), seq(5,25,5))
+```
 
-### File Description
+### Statistical Analysis
+```r
+# Generate descriptive statistics
+table1(patient_num, c("GLUC", "TGL", "HDL", "LDL"))
 
-* **assignment2.R:** Contains the R code for the functions and their usage.
-* **Assignment2.RData:** Sample data file containing multiple datasets.
+# Perform t-tests
+myTtest(dat=chol, classVar="sex", numVar=c("age", "chol", "tg"))
+```
 
-### Usage
+### Data Preprocessing
+```r
+# Handle missing values
+impute(dat=patient, varlist=c("LDL", "HRT", "MAMM"))
 
-1. **Clone the Repository:** Clone this repository to your local machine.
-2. **Open RStudio:** Start RStudio and open the `assignment2.R` script.
-3. **Load Data:** Load the `Assignment2.RData` data file into your R environment.
-4. **Run the Script:** Execute the code in the `assignment2.R` script to define and test the functions.
+# Calculate correlations
+myCorTest(chol, "bmi", c("sbp", "dbp", "vldl", "hdl", "ldl"))
+```
 
-## **Additional Notes**
+## Contributing
 
-* The scripts are designed to be modular and reusable.
-* You can modify and adapt the functions to fit your specific data analysis needs.
-* For more detailed explanations and examples, refer to the comments within the R scripts.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/enhancement`)
+3. Commit changes (`git commit -am 'Add enhancement'`)
+4. Push to branch (`git push origin feature/enhancement`)
+5. Create Pull Request
+
+## License
+
+This project is licensed under the MIT License - see [LICENSE](LICENSE) for details.
+
+## Citation
+
+If you use this framework in your research, please cite:
+```bibtex
+@software{r_data_analysis,
+  author = {Shadman, Nabil},
+  title = {R Data Analysis Framework},
+  year = {2021},
+  url = {https://github.com/nabilshadman/r-data-analysis}
+}
+```
