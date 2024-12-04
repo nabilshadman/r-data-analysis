@@ -1,6 +1,8 @@
 # R Data Analysis Framework
-[![Experimental](https://img.shields.io/badge/Status-Experimental-orange.svg)](https://shields.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+![R](https://img.shields.io/badge/R-Data_Analysis-blue)
+[![Experimental](https://img.shields.io/badge/Status-Experimental-orange.svg)](https://shields.io/)
+
 
 A modular R framework for data analysis, data manipulation, and visualization. This library provides functions for handling data, with emphasis on reproducibility and clean code practices.
 
