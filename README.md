@@ -103,7 +103,7 @@ If you use this framework in your research, please cite:
 @software{r_data_analysis,
   author = {Shadman, Nabil},
   title = {R Data Analysis Framework},
-  year = {2021},
+  year = {2020},
   url = {https://github.com/nabilshadman/r-data-analysis}
 }
 ```
